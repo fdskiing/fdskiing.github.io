@@ -1,0 +1,17 @@
+<footer class="footer" role="complementary">
+
+	<hr>
+
+	{% for item in page.social %}
+	{% if item.type == 'email' %}
+	<a href="mailto:{{ item.url }}" class="btn">Contact me</a>
+	<hr>
+	{% endif %}
+	{% endfor %}
+
+	{% if page.footer %}
+	<p>{{ page.footer }}</p>
+	{% endif %}
+	<p>&copy; 2015 unless otherwise stated.</p>
+
+</footer>

@@ -1,0 +1,258 @@
+/*  §NORMALIS(Z)E
+/*==================================================*/
+
+@import 'normalize';
+
+/*  MIXINS & VARIABLES
+/*==================================================*/
+
+@import 'mixins';
+
+/*  §HTML
+/*==================================================*/
+
+html {
+    height: 100%;
+    background-color: white;
+    color: $color;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+body {
+	padding-bottom: 2em;
+}
+
+/*	EXTENDS
+/*==================================================*/
+
+.width {
+	max-width: 32em;
+	margin: 0 auto;
+	padding: 0 2em;
+}
+
+.plain-ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*	TYPE
+/*==================================================*/
+
+h1,h2,h3,.btn {
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+}
+
+p {
+	margin: 2em 0;
+}
+
+a {
+	color: red;
+
+	&:hover {
+		color: green;
+	}
+
+	&:visited {
+		color: blue;
+	}
+
+}
+
+.btn {
+	display: inline-block;
+	padding: 1em 2em;
+	border: 2px solid $color;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	@include vendor(border-radius, 2em);
+
+	&:hover {
+		background-color: $color;
+		color: white;
+	}
+
+}
+
+a.btn {
+	color: $color;
+}
+
+/*	HEADER
+/*==================================================*/
+
+header {
+	@extend .width;
+	margin: 4em auto;
+	text-align: center;
+
+	h1 {
+		line-height: 1.5em;
+		margin: 0;
+		padding: 1em 0;
+
+	    @media screen and (max-width: 960px) {
+	    	font-size: 1.5em;
+	    }
+
+	}
+
+	p {
+		margin: 0 0 2em 0;
+		font-size: 1.25em;
+		line-height: 1.5em;
+		font-weight: 300;
+	}
+
+	.stickyTitle {
+		display: none;
+		background: white;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
+
+}
+
+.avatar {
+	position: relative;
+	display: block;
+	background: transparent;
+	width: 120px;
+	height: 120px;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto 2em auto;
+	@include vendor(border-radius, 100%);
+}
+
+.social {
+	@extend .plain-ul;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 2em;
+
+	li {
+		display: inline-block;
+		margin: .5em;
+
+	    @media screen and (max-width: 960px) {
+	    	margin: 0 .5em;
+	    }
+
+		a {
+			text-transform: uppercase;
+			color: $color;
+			text-decoration: none;
+			font-weight: 900;
+
+			&:hover {
+				color: #ccc;
+			}
+
+		    @media screen and (max-width: 960px) {
+		    	font-size: .75em;
+		    }
+
+		}
+
+	}
+
+}
+
+/*	BANNER
+/*==================================================*/
+
+.banner {
+	position: relative;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+/*	CONTENT
+/*==================================================*/
+
+.content {
+	@extend .width;
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+    @media screen and (max-width: 960px) {
+    	padding-top: 0;
+    	padding-bottom: 0;
+    }
+
+}
+
+blockquote {
+	margin-left: -2em;
+	margin-right: -2em;
+
+    @media screen and (max-width: 960px) {
+    	margin-left: 2em;
+    	margin-right: 2em;
+    }
+
+	.quote {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		font-style: italic;
+		margin-bottom: 0;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: '"';
+		}
+
+	}
+
+	.cite {
+		font-size: .75em;
+		line-height: 1.5em;
+	}
+
+}
+
+/*	FOOTER
+/*==================================================*/
+
+.footer {
+	@extend .width;
+	text-align: center;
+
+	hr {
+		width: 40px;
+		border: 0;
+		border-bottom: 2px solid $color;
+		height: 2px;
+		margin: 0 auto 2em auto;
+	}
+
+	.btn {
+		margin-bottom: 2em;
+	}
+
+	p {
+		text-align: left;
+		font-size: .875em;
+		line-height: 1.5em;
+		color: #ccc;
+		margin: 0;
+	}
+
+}

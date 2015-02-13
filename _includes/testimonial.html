@@ -1,0 +1,9 @@
+<blockquote>
+
+	{% for testimonial in page.testimonial %}
+	<p class="quote">{{ testimonial.quote }}</p>
+
+	<p class="cite">&mdash; {{ testimonial.source }}</p>
+	{% endfor %}
+
+</blockquote>
