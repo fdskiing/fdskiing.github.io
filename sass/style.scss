@@ -141,6 +141,10 @@ header {
 	overflow: hidden;
 	text-align: center;
 	margin-top: 2em;
+	
+	&.footer-social {
+		margin-bottom: 2em;
+	}
 
 	li {
 		display: inline-block;
