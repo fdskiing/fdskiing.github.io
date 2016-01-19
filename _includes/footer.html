@@ -1,13 +1,14 @@
 <footer class="footer" role="complementary">
 
 	<hr>
-
-	{% for item in page.social %}
-	{% if item.type == 'email' %}
-	<a href="mailto:{{ item.url }}" class="btn">Contact me</a>
+	
+	<ul class="social">
+		<li>+33 7 82 93 90 69</li>
+		<li>+44 790 811 9906</li>
+		<li>freddibblee@gmail.com</li>
+	</ul>
+	
 	<hr>
-	{% endif %}
-	{% endfor %}
 
 	{% if page.footer %}
 	<p>{{ page.footer }}</p>
