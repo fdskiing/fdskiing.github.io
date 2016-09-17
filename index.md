@@ -15,15 +15,15 @@ social:
   - type: email
     url: freddibblee@hotmail.com
   - type: twitter
-    url: https://twitter.com/fredDski
+    url: https://twitter.com/fdskiing
   - type: facebook
-    url: https://www.facebook.com/fredDski
+    url: https://www.facebook.com/FDskiing
   - type: instagram
     url:
   - type: youtube
     url:
   - type: tumblr
-    url: http://freddski.tumblr.com
+    url: http://FDskiing.tumblr.com
   - type: linkedin
     url:
 
