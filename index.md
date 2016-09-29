@@ -38,4 +38,4 @@ Hi, my name is Fred and I have worked in the Alps for over 10 years. I have a wi
 
 {% include testimonial.html %}
 
-The most rewarding challenge for me is the 'Plateau' skier who has reached a point they cannot get past. I have a passion for the mountains all year round and in the summer can be found rock climbing on the crags of North Wales.
+The most rewarding challenge for me is the 'Plateau' skier who has reached a point they cannot get passed. I have a passion for the mountains all year round and in the summer can be found rock climbing on the crags of North Wales.
